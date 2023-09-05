@@ -93,6 +93,11 @@ nav li a:hover {
   background-color: white;
 }
 
+.iconsize {
+  width: 32px;
+  height: 32px;
+}
+
 .food_menu {
   min-width: 50%;
   display: flex;
@@ -103,7 +108,7 @@ nav li a:hover {
   margin: 1em;
 }
 
-.pizzasection {
+.food-category {
   padding: 1em;
   margin: auto;
   text-align: center;
@@ -114,7 +119,7 @@ nav li a:hover {
   background-color: #ebf9fc;
 }
 
-.pizzasection:hover {
+.food-category:hover {
   background-color: #fe5634;
   cursor: pointer;
   color: white;
@@ -215,6 +220,61 @@ nav li a:hover {
   height: 8rem;
 }
 
+#aboutus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.aboutus_text {
+  margin-top: -1.2rem;
+  font-size: 1.2em;
+  line-height: 1.6;
+  flex: 0.5;
+  padding: 1rem;
+}
+
+#contactus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contactus_text {
+  margin-top: -1.2rem;
+  font-size: 1.2em;
+  line-height: 1.6;
+  flex: 0.5;
+  padding: 1rem;
+}
+
+footer {
+  width: 100%;
+  font-family: 'EB Garamond', serif;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1.1rem 0rem 1.1rem 0rem;
+  font-size: 1.2em;
+  margin-top: 10vh;
+  align-items: center;
+  border-top: 1px solid #e9ecef;
+}
+
+footer .social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-right: 1.2rem;
+  transform: translateY(4.5px);
+}
+
+.social-media .icons a:hover svg {
+  fill: #fe5634;
+  transition: fill 0.6s ease;
+}
+
+
 @media screen and (max-width:336px) {
   nav li a {
     margin-right: 0.5rem;
@@ -228,8 +288,54 @@ nav li a:hover {
   }
 }
 
-@media screen and (max-width:415px) {
+@media screen and (max-width:425px) {
   .brandname {
     display: none;
   }
+}
+
+@media screen and (max-width:399px) {
+  .reviews_box {
+    padding: 1rem 0rem;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width:287px) {
+  .reviews_box {
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  .review_by {
+    max-width: 50%;
+    padding: 0rem 0.5rem;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .reviews_box {
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width:1920px) {
+  .reviews_box {
+    max-width: 40%;
+  }
+}
+
+
+@media screen and (min-width:2560px) {
+  .reviews_box {
+    max-width: 30%;
+  }
+}
+
+@media screen and (min-width:3840px) {
+  .reviews_box {
+    max-width: 20%;
+  }
+
 }
