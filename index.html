@@ -5,147 +5,178 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Delissimo</title>
+  <meta name="description"
+    content="Delissimo har sedan 2016 erbjudit kulinariska upplevelser i stadens hjärta. Från hamburgare och pizzor till kötträtter och veganska val. Tradition möter nytänkande hos oss. Välkommen där varje måltid är en fest!">
   <link rel="stylesheet" href="css/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mukta&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Mukta&family=Bebas+Neue&family=EB+Garamond&display=swap"
+    rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <script src="js/index.js"></script>
 </head>
 
 <body>
-  <!-- Header  -->
+  <!-- Start på header  -->
   <header>
     <a href="index.html" class="headerlink">
-      <img src="img/logo32.png" alt="Delissimo">
-      <span class="brandname">Delissimo</span>
+      <h1 class="brandname">Delissimo</h1>
     </a>
-    <nav>
+    <nav id="headermenu">
       <ul>
         <li><a href="index.html">Hem</a></li>
         <li><a href="#aboutus">Om oss</a></li>
-        <li><a href="Hem">Kontakta oss</a></li>
-        <li><a href="Hem" style="transform: translateY(7px);"><img src="svg/cart.svg" class="cart4header"
+        <li><a href="#contactus">Kontakta oss</a></li>
+        <li><a href="test.html" style="transform: translateY(7px);"><img src="svg/cart.svg" class="cart4header"
               alt="Cart">(1)</a>
         </li>
       </ul>
     </nav>
   </header>
+  <!-- Slut på header -->
 
+  <!-- Start på main -->
   <main>
-    <h2 class="headliner">Menyer</h2>
-    <!-- Start av mat menyn -->
-    <article class="food_menu">
-      <section class="food-category">
-        <img src="img/pizza2.png" class="bgforicon iconsize" alt="Pizza">
-        <p>Pizza</p>
-      </section>
-      <section class="food-category">
-        <img src="img/burger.png" class="bgforicon iconsize" alt="Hamburgare">
-        <p>Hamburgare</p>
-      </section>
-      <section class="food-category">
-        <img src="img/icons/meaticon.png" class="bgforicon iconsize" alt="Kött">
-        <p>Kött</p>
-      </section>
-      <section class="food-category">
-        <img src="img/icons/fishicon.png" class="bgforicon iconsize" alt="Fisk">
-        <p>Fisk</p>
-      </section>
-      <section class="food-category">
-        <img src="img/icons/pastaicon.png" class="bgforicon iconsize" alt="Pasta">
-        <p>Pasta</p>
-      </section>
-      <section class="food-category">
-        <img src="img/icons/veganicon.png" class="bgforicon iconsize" alt="Veganskt">
-        <p>Veganskt</p>
-      </section>
-      <section class="food-category">
-        <img src="img/icons/drinksicon.png" class="bgforicon iconsize" alt="Dryck">
-        <p>Dryck</p>
-      </section>
+    <article id="bigbox">
+      <div class="bigbox-title">
+        <h1>Beställ Din Favorit Mat Vilken tid som helst</h1>
+        <p>
+          Sedan 2016 har Delissimo stolt serverat ett rikt utbud av kulinariska upplevelser i hjärtat av staden. Hos
+          oss hittar du allt från saftiga hamburgare och krispiga pizzor till vällagade kötträtter och härliga veganska
+          alternativ.
+        </p>
+        <h1>Prenumerera på vårt nyhetsbrev</h1>
+        <p>Prenumerera för att få en vecklig uppdatering om veckans menyer och andra nyheter!</p>
+        <form action="# ">
+          <input type="text" id="newsletter-email" placeholder="Email">
+          <input type="submit" value="Prenumerera">
+        </form>
+      </div>
+      <div class="bigbox-imgwrap">
+        <img src="img/frontman.png" class="bigbox-imgwrap" alt="Bild på kille som håller sin telefon">
+      </div>
     </article>
+    <h2 class="headliner" id="food_menu_title">Menyer</h2>
+    <!-- Start av mat menyn -->
+    <nav>
+      <ul id="food_menu">
+        <li>
+          <a href="meny/pizza.html" class="food-category">
+            <img src="img/pizza2.png" class="bgforicon iconsize" alt="Pizza">
+            <p>Pizza</p>
+          </a>
+        </li>
+        <li>
+          <a href="meny/pizza.html" class="food-category">
+            <img src="img/burger.png" class="bgforicon iconsize" alt="Hamburgare">
+            <p>Hamburgare</p>
+          </a>
+        </li>
+        <li>
+          <a href="meny/pizza.html" class="food-category">
+            <img src="img/icons/meaticon.png" class="bgforicon iconsize" alt="Kött">
+            <p>Kött</p>
+          </a>
+        </li>
+        <li>
+          <a href="meny/pizza.html" class="food-category">
+            <img src="img/icons/fishicon.png" class="bgforicon iconsize" alt="Fisk">
+            <p>Fisk</p>
+          </a>
+        </li>
+        <li>
+          <a href="meny/pizza.html" class="food-category">
+            <img src="img/icons/pastaicon.png" class="bgforicon iconsize" alt="Pasta">
+            <p>Pasta</p>
+          </a>
+        </li>
+        <li>
+          <a href="meny/pizza.html" class="food-category">
+            <img src="img/icons/veganicon.png" class="bgforicon iconsize" alt="Veganskt">
+            <p>Veganskt</p>
+          </a>
+        </li>
+        <li>
+          <a href="meny/pizza.html" class="food-category">
+            <img src="img/icons/drinksicon.png" class="bgforicon iconsize" alt="Dryck">
+            <p>Dryck</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
     <!-- Slut på mat menyn -->
 
     <!-- Start på populära beställningar -->
     <h2 class="headliner">Populära beställningar</h2>
-    <article class="popular_food">
-      <section class="popular_food_section">
+    <section class="popular_food">
+      <div class="popular_food_section">
         <div class="img-wrapper">
-          <img src="img/newpizza.jpg" class="popular_food_img" alt="Pizza">
+          <img src="img/food/pastafront.jpg" class="popular_food_img" alt="Pizza">
+          <span class="price-badge">120 kr</span>
+        </div>
+        <h3>Räkpasta</h3>
+        <p>
+          En god italiensk klassiker
+        </p>
+        <button class="order-nowbtn">Beställ nu</button>
+      </div>
+      <div class="popular_food_section">
+        <div class="img-wrapper">
+          <img src="img/food/asparagusjpg.jpg" class="popular_food_img" alt="Laxsallad">
+          <span class="price-badge">120 kr</span>
+        </div>
+        <h3>Kött med sparris</h3>
+        <p>
+          En utav våra mest populära!
+        </p>
+        <button class="order-nowbtn">Beställ nu</button>
+      </div>
+      <div class="popular_food_section">
+        <div class="img-wrapper">
+          <img src="img/food/newpizza.jpg" class="popular_food_img" alt="Pizza">
           <span class="price-badge">120 kr</span>
         </div>
         <h3>Salami Pizza</h3>
-        <p style="padding-bottom: 2em;">
+        <p>
           Salami pizza med extra ost
         </p>
         <button class="order-nowbtn">Beställ nu</button>
-      </section>
-      <section class="popular_food_section">
+      </div>
+      <div class="popular_food_section">
         <div class="img-wrapper">
-          <img src="img/laxsallad.jpg" class="popular_food_img" alt="Laxsallad">
+          <img src="img/food/laxsallad.jpg" class="popular_food_img" alt="Laxsallad">
           <span class="price-badge">120 kr</span>
         </div>
         <h3>Laxsallad</h3>
-        <p style="padding-bottom: 2em;">
+        <p>
           En utav våra mest populära
         </p>
         <button class="order-nowbtn">Beställ nu</button>
-      </section>
-      <section class="popular_food_section">
+      </div>
+      <div class="popular_food_section">
         <div class="img-wrapper">
-          <img src="img/newpizza.jpg" class="popular_food_img" alt="Pizza">
+          <img src="img/food/burger-4379863.jpg" class="popular_food_img" alt="Pizza">
           <span class="price-badge">120 kr</span>
         </div>
-        <h3>Salami Pizza</h3>
-        <p style="padding-bottom: 2em;">
-          Salami pizza med extra ost
+        <h3>Hamburgare</h3>
+        <p>
+          Välstekt kött med god sallad!
         </p>
         <button class="order-nowbtn">Beställ nu</button>
-      </section>
-      <section class="popular_food_section">
+      </div>
+      <div class="popular_food_section">
         <div class="img-wrapper">
-          <img src="img/laxsallad.jpg" class="popular_food_img" alt="Laxsallad">
+          <img src="img/food/falafel-sandwich-7414511_1920.jpg" class="popular_food_img" alt="Laxsallad">
           <span class="price-badge">120 kr</span>
         </div>
-        <h3>Laxsallad</h3>
-        <p style="padding-bottom: 2em;">
+        <h3>Falafel Sandwich</h3>
+        <p>
           En utav våra mest populära
         </p>
         <button class="order-nowbtn">Beställ nu</button>
-      </section>
-      <section class="popular_food_section">
-        <div class="img-wrapper">
-          <img src="img/newpizza.jpg" class="popular_food_img" alt="Pizza">
-          <span class="price-badge">120 kr</span>
-        </div>
-        <h3>Salami Pizza</h3>
-        <p style="padding-bottom: 2em;">
-          Salami pizza med extra ost
-        </p>
-        <button class="order-nowbtn">Beställ nu</button>
-      </section>
-      <section class="popular_food_section">
-        <div class="img-wrapper">
-          <img src="img/laxsallad.jpg" class="popular_food_img" alt="Laxsallad">
-          <span class="price-badge">120 kr</span>
-        </div>
-        <h3>Laxsallad</h3>
-        <p style="padding-bottom: 2em;">
-          En utav våra mest populära
-        </p>
-        <button class="order-nowbtn">Beställ nu</button>
-      </section>
-    </article>
+      </div>
+    </section>
     <!-- Slut på populära beställningar -->
 
     <!-- Start på omdömen -->
@@ -193,6 +224,7 @@
         <p>Sedan 2016 har Delissimo stolt serverat ett rikt utbud av kulinariska upplevelser i hjärtat av staden. Hos
           oss hittar du allt från saftiga hamburgare och krispiga pizzor till vällagade kötträtter och härliga veganska
           alternativ.
+        </p>
         <p>
           Oavsett smakriktning har vi något som garanterat kommer att fresta dina smaklökar. Besök oss och
           upplev en matresa där tradition möter nytänkande i en perfekt harmoni.
@@ -207,20 +239,37 @@
     <article id="contactus">
       <section class="contactus_text">
         <h2 class="headliner">Kontakta oss</h2>
-        <p>Sedan 2016 har Delissimo stolt serverat ett rikt utbud av kulinariska upplevelser i hjärtat av staden. Hos
-          oss hittar du allt från saftiga hamburgare och krispiga pizzor till vällagade kötträtter och härliga veganska
-          alternativ.
-          <br>
-          Oavsett smakriktning har vi något som garanterat kommer att fresta dina smaklökar. Besök oss och
-          upplev en matresa där tradition möter nytänkande i en perfekt harmoni.
-          <br>
-          <b>Varmt välkommen till Delissimo - där
-            varje måltid är en fest!</b>
+        <p>Om du har några frågor, feedback eller behöver ytterligare information, tveka inte att kontakta oss. Du kan
+          nå oss via telefon på <strong>[123456789]</strong> eller formuläret nedanför.
+        </p>
+        <form action="#" method="POST" autocomplete="off">
+          <input type="text" name="contact_name" placeholder="Namn*" required>
+          <input type="email" name="contact_email" placeholder="Email*" required>
+          <input type="tel" name="contact_email" placeholder="Telefonnummer*" required>
+          <textarea name="contact_message" cols="50" rows="12" placeholder="Meddelande*" required></textarea>
+          <input type="submit" value="Skicka">
+        </form>
       </section>
     </article>
     <!-- Slut på kontakta oss  -->
-  </main>
 
+    <!-- Start på om plats  -->
+    <article id="location">
+      <section class="location_text">
+        <h2 class="headliner">Vart hittar du oss?</h2>
+        <p>Hitta oss på Portgången!
+          Besök vår plats belägen på <b>Portgången 3, 433 38 Partille</b>. Vi ser fram emot att välkomna dig!
+        <p>
+          <iframe title="Google Maps plats för Delissimo i Partille"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8518.360585132888!2d12.1218837!3d57.7404028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff70ce5e59e6d%3A0xc7fa510a36eff5!2sDelissimo%20-%20italian%20deli%20%26%20espresso%20bar!5e0!3m2!1sen!2sse!4v1693992146896!5m2!1sen!2sse"
+            class="mapiframe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+    </article>
+    <!-- Slut på plats -->
+  </main>
+  <!-- Slut på main -->
+
+  <!-- Start på footer -->
   <footer>
     <div></div>
     <h3>© Delissimo.se - 2023</h3>
@@ -252,6 +301,7 @@
       </div>
     </div>
   </footer>
+  <!-- Slut på footer -->
 </body>
 
 </html>

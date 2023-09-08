@@ -1,9 +1,103 @@
+html,
 body {
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
   font-family: 'Mukta', sans-serif;
   min-height: 100vh;
+  scroll-behavior: smooth;
   background-color: #fff;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+
+
+input[type=text],
+input[type=email],
+input[type=tel] {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #e9ecef;
+  border-radius: 2px;
+  font-size: 1rem;
+  margin: 0.4rem 0rem 0.4rem 0rem;
+  background-color: white;
+}
+
+input[type=text]:hover {
+  border: 1px solid #fe5634;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.6s;
+}
+
+input[type=text]:focus {
+  border: 1px solid #fe5634;
+}
+
+
+input[type=submit] {
+  background-color: white;
+  padding: 12px;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  letter-spacing: 1px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  color: white;
+  background-color: #fe5634;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.6s;
+}
+
+textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 2px;
+  margin: 1rem 0rem 1rem 0rem;
+  border: 1px solid #e9ecef;
+}
+
+textarea:hover {
+  border: 1px solid #fe5634;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.6s;
+}
+
+textarea:focus {
+  border: 1px solid #fe5634;
+}
+
+.breadcrumb {
+  padding: 1rem 0rem 1rem 1rem;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: black;
+  margin: 0 0.2rem;
+  transition: color 0.5s;
+}
+
+.breadcrumb a:hover {
+  color: #fe5634;
+  transition: 0.3s;
+}
+
+.breadcrumb span {
+  margin: 0 0.2rem;
+  color: #fe5634;
 }
 
 header {
@@ -16,12 +110,6 @@ header {
   background-color: #fff;
 }
 
-.headerlogo {
-  width: 32px;
-  height: 32px;
-  background-image: url('../img/logo32.png');
-}
-
 .cart4header {
   width: 24px;
   height: 24px;
@@ -32,7 +120,8 @@ header {
   color: black;
   font-size: 1.8rem;
   display: inline-block;
-  transform: translateY(-0px);
+  margin-left: 1rem;
+  transition: color 0.4s;
 }
 
 .brandname:hover {
@@ -46,7 +135,7 @@ header {
   font-weight: bold;
 }
 
-nav {
+#headermenu {
   margin-right: 0rem;
 }
 
@@ -55,11 +144,11 @@ nav ul {
   list-style-type: none;
 }
 
-nav li {
+#headermenu li {
   display: inline-block;
 }
 
-nav li a {
+#headermenu li a {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -69,12 +158,54 @@ nav li a {
   margin-right: 1rem;
 }
 
-nav li a:hover {
+#headermenu nav li a:hover {
   font-weight: bold;
   color: #fe5634;
   opacity: 0.8;
   transition: 0.4s;
 }
+
+#bigbox {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 2rem;
+  border-radius: 10px;
+  margin: 1em;
+  padding: 2em;
+  background-color: #ebf9fc;
+}
+
+.bigbox-title {
+  width: 50%;
+}
+
+#bigbox h1 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+#bigbox input[type=text] {
+  width: 50%;
+}
+
+#bigbox input[type=submit] {
+  border-radius: 1px;
+  padding: 1rem;
+}
+
+.bigbox-imgwrap {
+  width: 35vh;
+  height: 45vh;
+}
+
+.bigbox-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 
 .headliner {
   text-decoration: underline;
@@ -98,7 +229,7 @@ nav li a:hover {
   height: 32px;
 }
 
-.food_menu {
+#food_menu {
   min-width: 50%;
   display: flex;
   flex-direction: row;
@@ -106,6 +237,15 @@ nav li a:hover {
   flex-wrap: wrap;
   gap: 1em;
   margin: 1em;
+}
+
+#food_menu a {
+  text-decoration: none;
+}
+
+#food_menu li {
+  display: flex;
+  flex: 1;
 }
 
 .food-category {
@@ -119,12 +259,20 @@ nav li a:hover {
   background-color: #ebf9fc;
 }
 
+
 .food-category:hover {
   background-color: #fe5634;
   cursor: pointer;
   color: white;
   transition: 0.8s;
 }
+
+.food-category:hover p,
+.food-category:hover a {
+  color: white;
+  transition: 0.8s;
+}
+
 
 .popular_food {
   display: flex;
@@ -136,8 +284,8 @@ nav li a:hover {
 }
 
 .popular_food_section {
-  padding: 1rem 0rem;
-  margin: auto;
+  padding: 1rem 0.5rem 1rem 1rem;
+  margin: 0 auto;
   border-radius: 10px;
   text-align: center;
   flex-grow: 1;
@@ -145,6 +293,10 @@ nav li a:hover {
   flex-shrink: 1;
   background: rgb(255, 255, 255);
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 28%, rgba(220, 244, 249, 1) 90%, rgba(235, 249, 252, 1) 100%);
+}
+
+.popular_food_section p {
+  padding-bottom: 2em;
 }
 
 .img-wrapper {
@@ -248,6 +400,26 @@ nav li a:hover {
   padding: 1rem;
 }
 
+#location {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.location_text {
+  margin-top: -1.2rem;
+  font-size: 1.2em;
+  line-height: 1.6;
+  flex: 0.5;
+  padding: 1rem;
+}
+
+.mapiframe {
+  width: 100%;
+  height: 25vh;
+  border: 0;
+}
+
 footer {
   width: 100%;
   font-family: 'EB Garamond', serif;
@@ -256,7 +428,7 @@ footer {
   flex-direction: row;
   padding: 1.1rem 0rem 1.1rem 0rem;
   font-size: 1.2em;
-  margin-top: 10vh;
+  flex-shrink: 0;
   align-items: center;
   border-top: 1px solid #e9ecef;
 }
@@ -276,7 +448,7 @@ footer .social-media {
 
 
 @media screen and (max-width:336px) {
-  nav li a {
+  #headermenu nav li a {
     margin-right: 0.5rem;
   }
 }
@@ -291,6 +463,10 @@ footer .social-media {
 @media screen and (max-width:425px) {
   .brandname {
     display: none;
+  }
+
+  header {
+    justify-content: center;
   }
 }
 
@@ -314,15 +490,39 @@ footer .social-media {
   }
 }
 
+@media screen and (max-width:799px) {
+  body {
+    width: 100%;
+    margin: auto;
+  }
+
+  #bigbox {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width:1100px) {
+  body {
+    width: 80%;
+    margin: auto;
+  }
+}
+
 @media screen and (min-width:1280px) {
   .reviews_box {
-    max-width: 50%;
+    max-width: 60%;
   }
 }
 
 @media screen and (min-width:1920px) {
   .reviews_box {
     max-width: 40%;
+  }
+
+  body {
+    width: 70%;
+    margin: auto;
   }
 }
 
@@ -331,6 +531,12 @@ footer .social-media {
   .reviews_box {
     max-width: 30%;
   }
+
+  .bigbox-imgwrap {
+    width: 35vh;
+    height: 45vh;
+  }
+
 }
 
 @media screen and (min-width:3840px) {
