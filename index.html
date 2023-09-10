@@ -28,7 +28,7 @@
         <li><a href="index.html">Hem</a></li>
         <li><a href="#aboutus">Om oss</a></li>
         <li><a href="#contactus">Kontakta oss</a></li>
-        <li><a href="test.html" style="transform: translateY(7px);"><img src="svg/cart.svg" class="cart4header"
+        <li><a href="#" style="transform: translateY(7px);"><img src="svg/cart.svg" class="cart4header"
               alt="Cart">(1)</a>
         </li>
       </ul>
@@ -53,9 +53,12 @@
           <input type="submit" value="Prenumerera">
         </form>
       </div>
-      <div class="bigbox-imgwrap">
+      <picture>
+        <source media="(max-width: 778px)" srcset="img/frontman-small.png">
+        <source media="(min-width: 779px)" srcset="img/frontman.png">
         <img src="img/frontman.png" class="bigbox-imgwrap" alt="Bild på kille som håller sin telefon">
-      </div>
+      </picture>
+
     </article>
     <h2 class="headliner" id="food_menu_title">Menyer</h2>
     <!-- Start av mat menyn -->
@@ -63,13 +66,13 @@
       <ul id="food_menu">
         <li>
           <a href="meny/pizza.html" class="food-category">
-            <img src="img/pizza2.png" class="bgforicon iconsize" alt="Pizza">
+            <img src="img/icons/pizza2.png" class="bgforicon iconsize" alt="Pizza">
             <p>Pizza</p>
           </a>
         </li>
         <li>
           <a href="meny/pizza.html" class="food-category">
-            <img src="img/burger.png" class="bgforicon iconsize" alt="Hamburgare">
+            <img src="img/icons/burger.png" class="bgforicon iconsize" alt="Hamburgare">
             <p>Hamburgare</p>
           </a>
         </li>
@@ -245,7 +248,7 @@
         <form action="#" method="POST" autocomplete="off">
           <input type="text" name="contact_name" placeholder="Namn*" required>
           <input type="email" name="contact_email" placeholder="Email*" required>
-          <input type="tel" name="contact_email" placeholder="Telefonnummer*" required>
+          <input type="tel" name="contact_phone" placeholder="Telefonnummer*" required>
           <textarea name="contact_message" cols="50" rows="12" placeholder="Meddelande*" required></textarea>
           <input type="submit" value="Skicka">
         </form>

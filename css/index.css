@@ -15,7 +15,6 @@ main {
 }
 
 
-
 input[type=text],
 input[type=email],
 input[type=tel] {
@@ -283,19 +282,20 @@ nav ul {
 }
 
 .popular_food_section {
+  display: flex;
+  flex-direction: column;
   padding: 1rem 0.5rem 1rem 1rem;
-  margin: 0 auto;
   border-radius: 10px;
   text-align: center;
   flex-grow: 1;
   flex-basis: 0;
   flex-shrink: 1;
-  background: rgb(255, 255, 255);
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 28%, rgba(220, 244, 249, 1) 90%, rgba(235, 249, 252, 1) 100%);
 }
 
 .popular_food_section p {
   padding-bottom: 2em;
+  min-height: 3em;
 }
 
 .img-wrapper {
@@ -304,6 +304,13 @@ nav ul {
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+}
+
+.img-wrapper,
+h3,
+p,
+button {
+  flex-shrink: 0;
 }
 
 .popular_food_img {
@@ -489,7 +496,7 @@ footer .social-media {
   }
 }
 
-@media screen and (max-width:799px) {
+@media screen and (max-width:660px) {
   body {
     width: 100%;
     margin: auto;
@@ -500,13 +507,13 @@ footer .social-media {
   }
 }
 
-
-@media screen and (min-width:1100px) {
-  body {
-    width: 80%;
-    margin: auto;
+@media screen and (min-height:1080px) {
+  .bigbox-img {
+    width: 25vh;
+    height: 35vh;
   }
 }
+
 
 @media screen and (min-width:1280px) {
   .reviews_box {
