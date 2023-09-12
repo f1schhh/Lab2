@@ -14,6 +14,7 @@ main {
   flex: 1 0 auto;
 }
 
+/* Start på inputs och textarea  */
 
 input[type=text],
 input[type=email],
@@ -27,16 +28,11 @@ input[type=tel] {
   background-color: white;
 }
 
-input[type=text]:hover {
-  border: 1px solid #fe5634;
+input:hover {
+  border: 1px solid #E22600;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   transition: 0.6s;
 }
-
-input[type=text]:focus {
-  border: 1px solid #fe5634;
-}
-
 
 input[type=submit] {
   background-color: white;
@@ -54,7 +50,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
   color: white;
-  background-color: #fe5634;
+  background-color: #E22600;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   transition: 0.6s;
 }
@@ -69,15 +65,18 @@ textarea {
 }
 
 textarea:hover {
-  border: 1px solid #fe5634;
+  border: 1px solid #E22600;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   transition: 0.6s;
 }
 
 textarea:focus {
-  border: 1px solid #fe5634;
+  border: 1px solid #E22600;
 }
 
+/* Slut på inputs och textarea  */
+
+/* Start på breadcrumb meny */
 .breadcrumb {
   padding: 1rem 0rem 1rem 1rem;
 }
@@ -90,14 +89,18 @@ textarea:focus {
 }
 
 .breadcrumb a:hover {
-  color: #fe5634;
+  color: #E22600;
   transition: 0.3s;
 }
 
 .breadcrumb span {
   margin: 0 0.2rem;
-  color: #fe5634;
+  color: #E22600;
 }
+
+/* Slut på breadcrumb meny */
+
+/* Start för header och innehåll i header  */
 
 header {
   width: 100%;
@@ -124,7 +127,7 @@ header {
 }
 
 .brandname:hover {
-  color: #fe5634;
+  color: #E22600;
   transition: 0.4s;
 }
 
@@ -147,6 +150,10 @@ nav ul {
   display: inline-block;
 }
 
+.cart_position {
+  transform: translateY(7px);
+}
+
 #headermenu li a {
   display: flex;
   align-items: center;
@@ -158,12 +165,16 @@ nav ul {
 }
 
 #headermenu li a:hover {
-  color: #fe5634;
+  color: #E22600;
   opacity: 0.8;
   transition: 0.4s;
 }
 
-#bigbox {
+/* Slut för header och innehåll i header  */
+
+/* Start för nyhetsbrev box  */
+
+#newsletter_box {
   display: flex;
   flex-direction: row;
   margin: auto;
@@ -175,40 +186,43 @@ nav ul {
   background-color: #ebf9fc;
 }
 
-.bigbox-title {
+.newsletter_box-title {
   width: 50%;
 }
 
-#bigbox h1 {
+#newsletter_box h2 {
   font-family: 'Bebas Neue', sans-serif;
 }
 
-#bigbox input[type=text] {
+#newsletter_box input[type=email] {
   width: 50%;
 }
 
-#bigbox input[type=submit] {
+#newsletter_box input[type=submit] {
   border-radius: 1px;
   padding: 1rem;
 }
 
-.bigbox-imgwrap {
-  width: 35vh;
-  height: 45vh;
+.newsletter_box-imgwrap {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 
-.bigbox-img {
+.newsletter_box-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
 
+/* Slut för nyhetsbrev box  */
+
 
 .headliner {
   text-decoration: underline;
   text-decoration-thickness: 2px;
-  text-decoration-color: #fe5634;
+  text-decoration-color: #E22600;
   text-underline-position: under;
   text-underline-offset: 4px;
   font-weight: bolder;
@@ -226,6 +240,8 @@ nav ul {
   width: 32px;
   height: 32px;
 }
+
+/* Start på mat menyn  */
 
 #food_menu {
   min-width: 50%;
@@ -259,7 +275,7 @@ nav ul {
 
 
 .food-category:hover {
-  background-color: #fe5634;
+  background-color: #E22600;
   cursor: pointer;
   color: white;
   transition: 0.8s;
@@ -271,6 +287,10 @@ nav ul {
   transition: 0.8s;
 }
 
+/* Slut på mat menyn  */
+
+
+/* Start på populära beställningar  */
 
 .popular_food {
   display: flex;
@@ -326,7 +346,7 @@ button {
   right: 0;
   top: 20%;
   transform: translateY(-50%);
-  background-color: #fe5634;
+  background-color: #E22600;
   border-radius: 50%;
   border: 1px solid white;
   padding: 5px 10px;
@@ -353,10 +373,14 @@ button {
 
 .popular_food_section .order-nowbtn:hover {
   color: white;
-  background-color: #fe5634;
+  background-color: #E22600;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   transition: 0.8s;
 }
+
+/* Slut på populära beställningar  */
+
+/* Start på omdömens styling */
 
 .reviews_box {
   max-width: 80%;
@@ -378,6 +402,9 @@ button {
   height: 8rem;
 }
 
+/* Slut på omdömens styling */
+
+/* Start på om oss styling */
 #aboutus {
   display: flex;
   flex-wrap: wrap;
@@ -392,6 +419,9 @@ button {
   padding: 1rem;
 }
 
+/* Slut på om oss styling */
+
+/* Start på kontakta oss styling */
 #contactus {
   display: flex;
   flex-wrap: wrap;
@@ -406,6 +436,9 @@ button {
   padding: 1rem;
 }
 
+/* Slut på kontakta oss styling */
+
+/* Start på vart hittar du oss? styling */
 #location {
   display: flex;
   flex-wrap: wrap;
@@ -425,6 +458,10 @@ button {
   height: 25vh;
   border: 0;
 }
+
+/* Slut på vart hittar du oss? styling */
+
+/* Start på footer */
 
 footer {
   width: 100%;
@@ -447,15 +484,57 @@ footer .social-media {
   transform: translateY(4.5px);
 }
 
-.social-media .icons a:hover svg {
-  fill: #fe5634;
+.social-media .footericons a:hover svg {
+  fill: #E22600;
   transition: fill 0.6s ease;
 }
 
+/* Slut på footer */
 
-@media screen and (max-width:336px) {
-  #headermenu nav li a {
+/* Start på 404 */
+
+.error_article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.error_article a {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: #E22600;
+}
+
+.error_article a:hover {
+
+  color: #E22600;
+  transition: 0.8s;
+}
+
+/* Slut på 404 */
+
+
+/* Start på media queries för optimering för olika längder och höjder  */
+@media screen and (max-width:289px) {
+  #headermenu li a {
     margin-right: 0.5rem;
+  }
+
+  .reviews_box {
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  .review_by {
+    max-width: 50%;
+    padding: 0rem 0.5rem;
+    margin: auto !important;
+  }
+
+  footer h3 {
+    font-size: 1rem;
   }
 }
 
@@ -466,13 +545,15 @@ footer .social-media {
   }
 }
 
-@media screen and (max-width:425px) {
-  .brandname {
-    display: none;
+@media screen and (max-width:336px) {
+  #headermenu nav li a {
+    margin-right: 0.5rem;
   }
+}
 
-  header {
-    justify-content: center;
+@media screen and (max-height:360px) {
+  #headermenu nav li a {
+    margin-right: 0.5rem;
   }
 }
 
@@ -483,18 +564,16 @@ footer .social-media {
   }
 }
 
-@media screen and (max-width:287px) {
-  .reviews_box {
-    max-width: 100%;
-    flex-direction: column;
+@media screen and (max-width:445px) {
+  .brandname {
+    display: none;
   }
 
-  .review_by {
-    max-width: 50%;
-    padding: 0rem 0.5rem;
-    margin: auto;
+  header {
+    justify-content: center;
   }
 }
+
 
 @media screen and (max-width:660px) {
   body {
@@ -502,13 +581,31 @@ footer .social-media {
     margin: auto;
   }
 
-  #bigbox {
+  #newsletter_box {
     display: none;
+  }
+
+  .aboutus_text,
+  .contactus_text,
+  .location_text {
+    flex-grow: 0.8;
+  }
+}
+
+@media screen and (max-width:639px) and (min-width:599px) {
+  .reviews_box {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width:799px) and (min-width:639px) {
+  .reviews_box {
+    max-width: 55%;
   }
 }
 
 @media screen and (min-height:1080px) {
-  .bigbox-img {
+  .newsletter_box-img {
     width: 25vh;
     height: 35vh;
   }
@@ -530,17 +627,16 @@ footer .social-media {
     width: 70%;
     margin: auto;
   }
+
+  .newsletter_box-imgwrap {
+    max-width: 500px;
+  }
 }
 
 
 @media screen and (min-width:2560px) {
   .reviews_box {
     max-width: 30%;
-  }
-
-  .bigbox-imgwrap {
-    width: 35vh;
-    height: 45vh;
   }
 
 }
@@ -551,3 +647,5 @@ footer .social-media {
   }
 
 }
+
+/* Slut på media queries för optimering för olika längder och höjder  */

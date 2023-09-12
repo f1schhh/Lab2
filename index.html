@@ -28,9 +28,8 @@
         <li><a href="index.html">Hem</a></li>
         <li><a href="#aboutus">Om oss</a></li>
         <li><a href="#contactus">Kontakta oss</a></li>
-        <li><a href="#" style="transform: translateY(7px);"><img src="svg/cart.svg" class="cart4header"
-              alt="Cart">(1)</a>
-        </li>
+        <li><a href="#" class="cart_position" aria-label="Visa din kundvagn"><img src="svg/cart.svg" class="cart4header"
+              alt="En ikon på en kundvagn">(1)</a></li>
       </ul>
     </nav>
   </header>
@@ -38,71 +37,71 @@
 
   <!-- Start på main -->
   <main>
-    <article id="bigbox">
-      <div class="bigbox-title">
-        <h1>Beställ Din Favorit Mat Vilken tid som helst</h1>
+    <article id="newsletter_box">
+      <div class="newsletter_box-title">
+        <h2>Beställ Din Favorit Mat Vilken tid som helst</h2>
         <p>
           Sedan 2016 har Delissimo stolt serverat ett rikt utbud av kulinariska upplevelser i hjärtat av staden. Hos
           oss hittar du allt från saftiga hamburgare och krispiga pizzor till vällagade kötträtter och härliga veganska
           alternativ.
         </p>
-        <h1>Prenumerera på vårt nyhetsbrev</h1>
+        <h2>Prenumerera på vårt nyhetsbrev</h2>
         <p>Prenumerera för att få en vecklig uppdatering om veckans menyer och andra nyheter!</p>
-        <form action="# ">
-          <input type="text" id="newsletter-email" placeholder="Email">
-          <input type="submit" value="Prenumerera">
+        <form action="#" autocomplete="off">
+          <input type="email" class="newsletter-email" name="newsletter-email" placeholder="Email">
+          <input type="submit" name="newsletter-submit" value="Prenumerera">
         </form>
       </div>
       <picture>
-        <source media="(max-width: 778px)" srcset="img/frontman-small.png">
+        <source media="(max-width: 778px)" srcset="img/frontman-medium.png">
         <source media="(min-width: 779px)" srcset="img/frontman.png">
-        <img src="img/frontman.png" class="bigbox-imgwrap" alt="Bild på kille som håller sin telefon">
+        <img src="img/frontman.png" class="newsletter_box-imgwrap" alt="Bild på kille som håller sin telefon">
       </picture>
-
     </article>
     <h2 class="headliner" id="food_menu_title">Menyer</h2>
+
     <!-- Start av mat menyn -->
     <nav>
       <ul id="food_menu">
         <li>
           <a href="meny/pizza.html" class="food-category">
-            <img src="img/icons/pizza2.png" class="bgforicon iconsize" alt="Pizza">
+            <img src="img/icons/pizza2.png" class="bgforicon iconsize" alt="En ikon på en pizza">
             <p>Pizza</p>
           </a>
         </li>
         <li>
-          <a href="meny/pizza.html" class="food-category">
-            <img src="img/icons/burger.png" class="bgforicon iconsize" alt="Hamburgare">
+          <a href="404.html" class="food-category">
+            <img src="img/icons/burger.png" class="bgforicon iconsize" alt="En ikon på en hamburgare">
             <p>Hamburgare</p>
           </a>
         </li>
         <li>
-          <a href="meny/pizza.html" class="food-category">
-            <img src="img/icons/meaticon.png" class="bgforicon iconsize" alt="Kött">
+          <a href="404.html" class="food-category">
+            <img src="img/icons/meaticon.png" class="bgforicon iconsize" alt="En ikon på kött">
             <p>Kött</p>
           </a>
         </li>
         <li>
-          <a href="meny/pizza.html" class="food-category">
-            <img src="img/icons/fishicon.png" class="bgforicon iconsize" alt="Fisk">
+          <a href="404.html" class="food-category">
+            <img src="img/icons/fishicon.png" class="bgforicon iconsize" alt="En ikon på en Fisk">
             <p>Fisk</p>
           </a>
         </li>
         <li>
-          <a href="meny/pizza.html" class="food-category">
-            <img src="img/icons/pastaicon.png" class="bgforicon iconsize" alt="Pasta">
+          <a href="404.html" class="food-category">
+            <img src="img/icons/pastaicon.png" class="bgforicon iconsize" alt="En ikon på Pasta">
             <p>Pasta</p>
           </a>
         </li>
         <li>
-          <a href="meny/pizza.html" class="food-category">
-            <img src="img/icons/veganicon.png" class="bgforicon iconsize" alt="Veganskt">
+          <a href="404.html" class="food-category">
+            <img src="img/icons/veganicon.png" class="bgforicon iconsize" alt="En veganskt ikon">
             <p>Veganskt</p>
           </a>
         </li>
         <li>
-          <a href="meny/pizza.html" class="food-category">
-            <img src="img/icons/drinksicon.png" class="bgforicon iconsize" alt="Dryck">
+          <a href="404.html" class="food-category">
+            <img src="img/icons/drinksicon.png" class="bgforicon iconsize" alt="En Dryck ikon">
             <p>Dryck</p>
           </a>
         </li>
@@ -115,7 +114,7 @@
     <section class="popular_food">
       <div class="popular_food_section">
         <div class="img-wrapper">
-          <img src="img/food/pastafront.jpg" class="popular_food_img" alt="Pizza">
+          <img src="img/food/pastafront.jpg" class="popular_food_img" alt="En Pizza">
           <span class="price-badge">120 kr</span>
         </div>
         <h3>Räkpasta</h3>
@@ -126,7 +125,7 @@
       </div>
       <div class="popular_food_section">
         <div class="img-wrapper">
-          <img src="img/food/asparagusjpg.jpg" class="popular_food_img" alt="Laxsallad">
+          <img src="img/food/asparagusjpg.jpg" class="popular_food_img" alt="En Laxsallad">
           <span class="price-badge">120 kr</span>
         </div>
         <h3>Kött med sparris</h3>
@@ -137,7 +136,7 @@
       </div>
       <div class="popular_food_section">
         <div class="img-wrapper">
-          <img src="img/food/newpizza.jpg" class="popular_food_img" alt="Pizza">
+          <img src="img/food/newpizza.jpg" class="popular_food_img" alt="En Pizza">
           <span class="price-badge">120 kr</span>
         </div>
         <h3>Salami Pizza</h3>
@@ -148,7 +147,7 @@
       </div>
       <div class="popular_food_section">
         <div class="img-wrapper">
-          <img src="img/food/laxsallad.jpg" class="popular_food_img" alt="Laxsallad">
+          <img src="img/food/laxsallad.jpg" class="popular_food_img" alt="En Laxsallad">
           <span class="price-badge">120 kr</span>
         </div>
         <h3>Laxsallad</h3>
@@ -159,7 +158,7 @@
       </div>
       <div class="popular_food_section">
         <div class="img-wrapper">
-          <img src="img/food/burger-4379863.jpg" class="popular_food_img" alt="Pizza">
+          <img src="img/food/burger-4379863.jpg" class="popular_food_img" alt="En Hamburgare">
           <span class="price-badge">120 kr</span>
         </div>
         <h3>Hamburgare</h3>
@@ -170,7 +169,7 @@
       </div>
       <div class="popular_food_section">
         <div class="img-wrapper">
-          <img src="img/food/falafel-sandwich-7414511_1920.jpg" class="popular_food_img" alt="Laxsallad">
+          <img src="img/food/falafel-sandwich-7414511_1920.jpg" class="popular_food_img" alt="En Laxsallad">
           <span class="price-badge">120 kr</span>
         </div>
         <h3>Falafel Sandwich</h3>
@@ -187,7 +186,7 @@
     <article class="reviews_box">
       <section class="review_by">
         <div class="review_by_img">
-          <img src="img/reviewperson.jpg" class="popular_food_img" alt="Person 1">
+          <img src="img/reviewperson.jpg" class="popular_food_img" alt="En bild på en Person som gett ett omdöme">
         </div>
         <p>
           <i>"Utmärkt mat, bra pris och trevlig personal!"</i>
@@ -195,7 +194,7 @@
       </section>
       <section class="review_by">
         <div class="review_by_img">
-          <img src="img/review2.jpg" class="popular_food_img" alt="Person 2">
+          <img src="img/review2.jpg" class="popular_food_img" alt="En bild på en Person som gett ett omdöme">
         </div>
         <p>
           <i>"Utmärkt mat, bra pris och trevlig personal!"</i>
@@ -203,7 +202,7 @@
       </section>
       <section class="review_by">
         <div class="review_by_img">
-          <img src="img/review3.jpg" class="popular_food_img" alt="Person 3">
+          <img src="img/review3.jpg" class="popular_food_img" alt="En bild på en Person som gett ett omdöme">
         </div>
         <p>
           <i>"Utmärkt mat, bra pris och trevlig personal!"</i>
@@ -211,7 +210,7 @@
       </section>
       <section class="review_by">
         <div class="review_by_img">
-          <img src="img/review4.jpg" class="popular_food_img" alt="Person 4">
+          <img src="img/review4.jpg" class="popular_food_img" alt="En bild på en Person som gett ett omdöme">
         </div>
         <p>
           <i>"Utmärkt mat, bra pris och trevlig personal!"</i>
@@ -246,11 +245,15 @@
           nå oss via telefon på <strong>[123456789]</strong> eller formuläret nedanför.
         </p>
         <form action="#" method="POST" autocomplete="off">
-          <input type="text" name="contact_name" placeholder="Namn*" required>
-          <input type="email" name="contact_email" placeholder="Email*" required>
-          <input type="tel" name="contact_phone" placeholder="Telefonnummer*" required>
-          <textarea name="contact_message" cols="50" rows="12" placeholder="Meddelande*" required></textarea>
-          <input type="submit" value="Skicka">
+          <label for="contact_name">Namn:</label>
+          <input type="text" id="contact_name" name="contact_name" placeholder="Namn*" required>
+          <label for="contact_email">Email:</label>
+          <input type="email" id="contact_email" name="contact_email" placeholder="Email*" required>
+          <label for="contact_phone">Telefonnummer:</label>
+          <input type="tel" id="contact_phone" name="contact_phone" placeholder="Telefonnummer*" required>
+          <label for="contact_message">Meddelande:</label>
+          <textarea id="contact_message" name="contact_message" rows="12" placeholder="Meddelande*" required></textarea>
+          <input type="submit" name="contact_btn" value="Skicka">
         </form>
       </section>
     </article>
@@ -277,26 +280,26 @@
     <div></div>
     <h3>© Delissimo.se - 2023</h3>
     <div class="social-media">
-      <div class="icons">
-        <a href="https://instagram.com/" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+      <div class="footericons">
+        <a href="https://instagram.com/" target="_blank" aria-label="Instagram">
+          <svg role="img" aria-label="Instagram Ikon" xmlns="http://www.w3.org/2000/svg" height="1em"
             viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
             <path
               d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
           </svg>
         </a>
       </div>
-      <div class="icons">
-        <a href="https://instagram.com/" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+      <div class="footericons">
+        <a href="https://facebook.com/" target="_blank" aria-label="Facebook">
+          <svg role="img" aria-label="Facebook Ikon" xmlns="http://www.w3.org/2000/svg" height="1em"
             viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
             <path
               d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
           </svg></a>
       </div>
-      <div class="icons">
-        <a href="https://instagram.com/" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+      <div class="footericons">
+        <a href="https://google.com/" target="_blank" aria-label="Google">
+          <svg role="img" aria-label="Google Ikon" xmlns="http://www.w3.org/2000/svg" height="1em"
             viewBox="0 0 488 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
             <path
               d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z" />
