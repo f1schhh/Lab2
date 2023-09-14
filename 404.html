@@ -13,8 +13,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Mukta&family=Bebas+Neue&family=EB+Garamond&display=swap"
     rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-  <script src="../js/index.js"></script>
 </head>
 
 <body>
@@ -28,8 +26,8 @@
         <li><a href="../index.html">Hem</a></li>
         <li><a href="../index.html#aboutus">Om oss</a></li>
         <li><a href="../index.html#contactus">Kontakta oss</a></li>
-        <li><a href="#" class="cart_position"><img src="../svg/cart.svg" class="cart4header"
-              alt="En ikon på en kundvagn">(1)</a></li>
+        <li><a href="#" class="cart_position" aria-label="Visa din kundvagn"><img src="../svg/cart.svg"
+              class="cart4header" alt="En ikon på en kundvagn">(0)</a></li>
       </ul>
     </nav>
   </header>
@@ -43,8 +41,8 @@
     </nav>
     <article class="error_article">
       <h2 class="headliner">404</h2>
-      <p>Tyvärr kunde inte sidan som du sökte efter hittas. Klicka <a href="index.html">här</a> för att komma tillbaka
-        till startsidan.</p>
+      <p>Tyvärr kunde inte sidan som du sökte efter hittas. <a href="index.html">Klicka här för att komma tillbaka
+          till startsidan.</a></p>
     </article>
   </main>
   <!-- Slut på main -->
@@ -82,6 +80,9 @@
     </div>
   </footer>
   <!-- Slut på footer -->
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="../js/index.js"></script>
 </body>
 
 </html>

@@ -13,8 +13,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Mukta&family=Bebas+Neue&family=EB+Garamond&display=swap"
     rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-  <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -29,7 +27,7 @@
         <li><a href="#aboutus">Om oss</a></li>
         <li><a href="#contactus">Kontakta oss</a></li>
         <li><a href="#" class="cart_position" aria-label="Visa din kundvagn"><img src="svg/cart.svg" class="cart4header"
-              alt="En ikon på en kundvagn">(1)</a></li>
+              alt="En ikon på en kundvagn">(0)</a></li>
       </ul>
     </nav>
   </header>
@@ -53,9 +51,9 @@
         </form>
       </div>
       <picture>
-        <source media="(max-width: 778px)" srcset="img/frontman-medium.png">
-        <source media="(min-width: 779px)" srcset="img/frontman.png">
-        <img src="img/frontman.png" class="newsletter_box-imgwrap" alt="Bild på kille som håller sin telefon">
+        <source media="(max-width: 778px)" srcset="img/frontman-small.png">
+        <source media="(min-width: 779px)" srcset="img/frontman-normal.png">
+        <img src="img/frontman-normal.png" class="newsletter_box-imgwrap" alt="Bild på kille som håller sin telefon">
       </picture>
     </article>
     <h2 class="headliner" id="food_menu_title">Menyer</h2>
@@ -114,7 +112,7 @@
     <section class="popular_food">
       <div class="popular_food_section">
         <div class="img-wrapper">
-          <img src="img/food/pastafront.jpg" class="popular_food_img" alt="En Pizza">
+          <img src="img/food/pasta/pastafront.jpg" class="popular_food_img" alt="En bild på en Räkpasta">
           <span class="price-badge">120 kr</span>
         </div>
         <h3>Räkpasta</h3>
@@ -125,7 +123,7 @@
       </div>
       <div class="popular_food_section">
         <div class="img-wrapper">
-          <img src="img/food/asparagusjpg.jpg" class="popular_food_img" alt="En Laxsallad">
+          <img src="img/food/meat/asparagus.jpg" class="popular_food_img" alt="En bild på kött med sparris">
           <span class="price-badge">120 kr</span>
         </div>
         <h3>Kött med sparris</h3>
@@ -136,7 +134,7 @@
       </div>
       <div class="popular_food_section">
         <div class="img-wrapper">
-          <img src="img/food/newpizza.jpg" class="popular_food_img" alt="En Pizza">
+          <img src="img/food/pizza/salamipizza.jpg" class="popular_food_img" alt="En bild på en salami pizza">
           <span class="price-badge">120 kr</span>
         </div>
         <h3>Salami Pizza</h3>
@@ -147,7 +145,7 @@
       </div>
       <div class="popular_food_section">
         <div class="img-wrapper">
-          <img src="img/food/laxsallad.jpg" class="popular_food_img" alt="En Laxsallad">
+          <img src="img/food/fish/laxsallad.jpg" class="popular_food_img" alt="En på en laxsallad">
           <span class="price-badge">120 kr</span>
         </div>
         <h3>Laxsallad</h3>
@@ -158,10 +156,10 @@
       </div>
       <div class="popular_food_section">
         <div class="img-wrapper">
-          <img src="img/food/burger-4379863.jpg" class="popular_food_img" alt="En Hamburgare">
+          <img src="img/food/hamburger/cheeseburger.jpg" class="popular_food_img" alt="En bild på en cheeseburgare">
           <span class="price-badge">120 kr</span>
         </div>
-        <h3>Hamburgare</h3>
+        <h3>Cheese burger</h3>
         <p>
           Välstekt kött med god sallad!
         </p>
@@ -169,7 +167,7 @@
       </div>
       <div class="popular_food_section">
         <div class="img-wrapper">
-          <img src="img/food/falafel-sandwich-7414511_1920.jpg" class="popular_food_img" alt="En Laxsallad">
+          <img src="img/food/vegan/falafel-sandwich.jpg" class="popular_food_img" alt="En bild på en falafel sandwich">
           <span class="price-badge">120 kr</span>
         </div>
         <h3>Falafel Sandwich</h3>
@@ -183,40 +181,40 @@
 
     <!-- Start på omdömen -->
     <h2 class="headliner">Omdömen</h2>
-    <article class="reviews_box">
-      <section class="review_by">
+    <div class="reviews_box">
+      <article class="review_by">
         <div class="review_by_img">
           <img src="img/reviewperson.jpg" class="popular_food_img" alt="En bild på en Person som gett ett omdöme">
         </div>
         <p>
           <i>"Utmärkt mat, bra pris och trevlig personal!"</i>
         </p>
-      </section>
-      <section class="review_by">
+      </article>
+      <article class="review_by">
         <div class="review_by_img">
           <img src="img/review2.jpg" class="popular_food_img" alt="En bild på en Person som gett ett omdöme">
         </div>
         <p>
           <i>"Utmärkt mat, bra pris och trevlig personal!"</i>
         </p>
-      </section>
-      <section class="review_by">
+      </article>
+      <article class="review_by">
         <div class="review_by_img">
           <img src="img/review3.jpg" class="popular_food_img" alt="En bild på en Person som gett ett omdöme">
         </div>
         <p>
           <i>"Utmärkt mat, bra pris och trevlig personal!"</i>
         </p>
-      </section>
-      <section class="review_by">
+      </article>
+      <article class="review_by">
         <div class="review_by_img">
           <img src="img/review4.jpg" class="popular_food_img" alt="En bild på en Person som gett ett omdöme">
         </div>
         <p>
           <i>"Utmärkt mat, bra pris och trevlig personal!"</i>
         </p>
-      </section>
-    </article>
+      </article>
+    </div>
     <!-- Slut på omdömen  -->
 
     <!-- Start på om oss  -->
@@ -308,6 +306,9 @@
     </div>
   </footer>
   <!-- Slut på footer -->
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

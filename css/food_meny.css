@@ -13,17 +13,19 @@
 }
 
 .specific_food_section {
+  display: flex;
+  flex-direction: column;
   padding: 1rem 0.5rem 1rem 1rem;
   margin: 0 auto;
   border-radius: 10px;
   text-align: center;
   flex: 1 0 16.67%;
-  background: rgb(255, 255, 255);
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 28%, rgba(220, 244, 249, 1) 90%, rgba(235, 249, 252, 1) 100%);
 }
 
 .specific_food_section p {
   padding-bottom: 2em;
+  min-height: 3em;
 }
 
 .specific_food_img_wrapper {

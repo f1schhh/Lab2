@@ -14,8 +14,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Mukta&family=Bebas+Neue&family=EB+Garamond&display=swap"
     rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-  <script src="../js/index.js"></script>
 </head>
 
 <body>
@@ -29,8 +27,8 @@
         <li><a href="../index.html">Hem</a></li>
         <li><a href="../index.html#aboutus">Om oss</a></li>
         <li><a href="../index.html#contactus">Kontakta oss</a></li>
-        <li><a href="#" class="cart_position"><img src="../svg/cart.svg" class="cart4header"
-              alt="En ikon på en kundvagn">(1)</a></li>
+        <li><a href="#" class="cart_position" aria-label="Visa din kundvagn"><img src="../svg/cart.svg"
+              class="cart4header" alt="En ikon på en kundvagn">(0)</a></li>
         </li>
       </ul>
     </nav>
@@ -50,7 +48,7 @@
     <section class="specific_food">
       <div class="specific_food_section">
         <div class="specific_food_img_wrapper">
-          <img src="../img/food/pizza/olivpizza.jpg" class="specific_food_img" alt="Pizza">
+          <img src="../img/food/pizza/olivpizza.jpg" class="specific_food_img" alt="En bild på en olivpizza">
           <span class="specific_food_pricebadge">120 kr</span>
         </div>
         <h3>Olivpizza</h3>
@@ -61,7 +59,7 @@
       </div>
       <div class="specific_food_section">
         <div class="specific_food_img_wrapper">
-          <img src="../img/food/pizza/surdegspizza.jpg" class="specific_food_img" alt="Laxsallad">
+          <img src="../img/food/pizza/surdegspizza.jpg" class="specific_food_img" alt="En bild på en surdegspizza">
           <span class="specific_food_pricebadge">120 kr</span>
         </div>
         <h3>Surdegspizza</h3>
@@ -72,7 +70,7 @@
       </div>
       <div class="specific_food_section">
         <div class="specific_food_img_wrapper">
-          <img src="../img/food/newpizza.jpg" class="specific_food_img" alt="Pizza">
+          <img src="../img/food/pizza/meatpizza.jpg" class="specific_food_img" alt="En bild på en köttpizza">
           <span class="specific_food_pricebadge">120 kr</span>
         </div>
         <h3>Köttpizza</h3>
@@ -83,7 +81,8 @@
       </div>
       <div class="specific_food_section">
         <div class="specific_food_img_wrapper">
-          <img src="../img/food/pizza/mexicanaspecial.jpg" class="specific_food_img" alt="Laxsallad">
+          <img src="../img/food/pizza/mexicanaspecial.jpg" class="specific_food_img"
+            alt="En bild på en mexikansk pizza">
           <span class="specific_food_pricebadge">120 kr</span>
         </div>
         <h3>Mexicana Special</h3>
@@ -94,43 +93,21 @@
       </div>
       <div class="specific_food_section">
         <div class="specific_food_img_wrapper">
-          <img src="../img/food/burger-4379863.jpg" class="specific_food_img" alt="Pizza">
+          <img src="../img/food/pizza/salamipizza.jpg" class="specific_food_img" alt="En bild på en Salami pizza">
           <span class="specific_food_pricebadge">120 kr</span>
         </div>
-        <h3>Hamburgare</h3>
+        <h3>Salami pizza</h3>
         <p>
-          Välstekt kött med god sallad!
+          En god riktigt god salami pizza
         </p>
         <button class="order-nowbtn">Lägg i varukorg</button>
       </div>
       <div class="specific_food_section">
         <div class="specific_food_img_wrapper">
-          <img src="../img/food/falafel-sandwich-7414511_1920.jpg" class="specific_food_img" alt="Laxsallad">
+          <img src="../img/food/pizza/paprikapizza.jpg" class="specific_food_img" alt="En bild på en paprika pizza">
           <span class="specific_food_pricebadge">120 kr</span>
         </div>
-        <h3>Falafel Sandwich</h3>
-        <p>
-          En utav våra mest populära
-        </p>
-        <button class="order-nowbtn">Lägg i varukorg</button>
-      </div>
-      <div class="specific_food_section">
-        <div class="specific_food_img_wrapper">
-          <img src="../img/food/pastafront.jpg" class="specific_food_img" alt="Pizza">
-          <span class="specific_food_pricebadge">120 kr</span>
-        </div>
-        <h3>Räkpasta</h3>
-        <p>
-          En god italiensk klassiker
-        </p>
-        <button class="order-nowbtn">Lägg i varukorg</button>
-      </div>
-      <div class="specific_food_section">
-        <div class="specific_food_img_wrapper">
-          <img src="../img/food/asparagusjpg.jpg" class="specific_food_img" alt="Laxsallad">
-          <span class="specific_food_pricebadge">120 kr</span>
-        </div>
-        <h3>Kött med sparris</h3>
+        <h3>Paprika pizza</h3>
         <p>
           En utav våra mest populära!
         </p>
@@ -138,21 +115,43 @@
       </div>
       <div class="specific_food_section">
         <div class="specific_food_img_wrapper">
-          <img src="../img/food/newpizza.jpg" class="specific_food_img" alt="Pizza">
+          <img src="../img/food/pizza/veganpizza.jpg" class="specific_food_img" alt="En bild på en veganskt pizza">
           <span class="specific_food_pricebadge">120 kr</span>
         </div>
-        <h3>Salami Pizza</h3>
+        <h3>Vegansk pizza</h3>
         <p>
-          Salami pizza med extra ost
+          En god veganskt pizza
         </p>
         <button class="order-nowbtn">Lägg i varukorg</button>
       </div>
       <div class="specific_food_section">
         <div class="specific_food_img_wrapper">
-          <img src="../img/food/laxsallad.jpg" class="specific_food_img" alt="Laxsallad">
+          <img src="../img/food/pizza/garlicpizza.jpg" class="specific_food_img" alt="En bild på en garlic pizza">
           <span class="specific_food_pricebadge">120 kr</span>
         </div>
-        <h3>Laxsallad</h3>
+        <h3>Garlic pizza</h3>
+        <p>
+          En utav våra mest populära!
+        </p>
+        <button class="order-nowbtn">Lägg i varukorg</button>
+      </div>
+      <div class="specific_food_section">
+        <div class="specific_food_img_wrapper">
+          <img src="../img/food/pizza/husets.jpg" class="specific_food_img" alt="En bild på husets special pizza">
+          <span class="specific_food_pricebadge">120 kr</span>
+        </div>
+        <h3>Husets Special</h3>
+        <p>
+          En utav våra mest populära!
+        </p>
+        <button class="order-nowbtn">Lägg i varukorg</button>
+      </div>
+      <div class="specific_food_section">
+        <div class="specific_food_img_wrapper">
+          <img src="../img/food/pizza/margarita.jpg" class="specific_food_img" alt="En bild på en margarita">
+          <span class="specific_food_pricebadge">120 kr</span>
+        </div>
+        <h3>Margarita</h3>
         <p>
           En utav våra mest populära
         </p>
@@ -197,6 +196,9 @@
     </div>
   </footer>
   <!-- Slut på footer -->
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="../js/index.js"></script>
 </body>
 
 </html>
