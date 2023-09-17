@@ -301,7 +301,7 @@ nav ul {
   margin: 1em;
 }
 
-.popular_food_section {
+.popular_food_article {
   display: flex;
   flex-direction: column;
   padding: 1rem 0.5rem 1rem 1rem;
@@ -313,7 +313,7 @@ nav ul {
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 28%, rgba(220, 244, 249, 1) 90%, rgba(235, 249, 252, 1) 100%);
 }
 
-.popular_food_section p {
+.popular_food_article p {
   padding-bottom: 2em;
   min-height: 3em;
 }
@@ -356,7 +356,7 @@ button {
 }
 
 
-.popular_food_section .order-nowbtn {
+.popular_food_article .order-nowbtn {
   background-color: white;
   padding: 12px;
   color: black;
@@ -371,7 +371,7 @@ button {
   margin: auto;
 }
 
-.popular_food_section .order-nowbtn:hover {
+.popular_food_article .order-nowbtn:hover {
   color: white;
   background-color: #E22600;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
@@ -620,7 +620,7 @@ footer .social-media {
 
 @media screen and (min-width:1920px) {
   .reviews_box {
-    max-width: 40%;
+    max-width: 50%;
   }
 
   body {
