@@ -5,14 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Delissimo har sedan 2016 erbjudit kulinariska upplevelser i stadens hjärta. Från hamburgare och pizzor till kötträtter och veganska val. Tradition möter nytänkande hos oss. Välkommen där varje måltid är en fest!">
+    content="Delissimo har sedan 2016 erbjudit kulinariska upplevelser i stadens hjärta. Från hamburgare och pizzor till kötträtter och veganska val.">
+  <meta name="theme-color" content="#FFF">
   <title>Delissimo - 404 </title>
-  <link rel="stylesheet" href="css/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Mukta&family=Bebas+Neue&family=EB+Garamond&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -28,6 +29,16 @@
         <li><a href="index.html#contactus">Kontakta oss</a></li>
         <li><a href="#" class="cart_position" aria-label="Visa din kundvagn"><img src="svg/cart.svg" class="cart4header"
               alt="En ikon på en kundvagn">(0)</a></li>
+      </ul>
+    </nav>
+    <button aria-label="Öppna meny" class="mobile_btn">☰</button>
+    <nav id="mobile_menu">
+      <button aria-label="Stäng meny" class="close_mobile_btn">X</button>
+      <ul>
+        <li><a href="../index.html" onclick="resetMenu()">Hem</a></li>
+        <li><a href="../index.html#aboutus" onclick="resetMenu()">Om oss</a></li>
+        <li><a href="../index.html#contactus" onclick="resetMenu()">Kontakta oss</a></li>
+        <li><a href="#" onclick="resetMenu()">Kundvagn (0)</a></li>
       </ul>
     </nav>
   </header>

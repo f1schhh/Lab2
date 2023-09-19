@@ -5,14 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Delissimo har sedan 2016 erbjudit kulinariska upplevelser i stadens hjärta. Från hamburgare och pizzor till kötträtter och veganska val. Tradition möter nytänkande hos oss. Välkommen där varje måltid är en fest!">
+    content="Delissimo har sedan 2016 erbjudit kulinariska upplevelser i stadens hjärta. Från hamburgare och pizzor till kötträtter och veganska val.">
+  <meta name="theme-color" content="#FFF">
   <title>Delissimo</title>
-  <link rel="stylesheet" href="css/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Mukta&family=Bebas+Neue&family=EB+Garamond&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -28,6 +29,16 @@
         <li><a href="#contactus">Kontakta oss</a></li>
         <li><a href="#" class="cart_position" aria-label="Visa din kundvagn"><img src="svg/cart.svg" class="cart4header"
               alt="En ikon på en kundvagn">(0)</a></li>
+      </ul>
+    </nav>
+    <button aria-label="Öppna meny" class="mobile_btn">☰</button>
+    <nav id="mobile_menu">
+      <button aria-label="Stäng meny" class="close_mobile_btn">X</button>
+      <ul>
+        <li><a href="index.html" onclick="resetMenu()">Hem</a></li>
+        <li><a href="#aboutus" onclick="resetMenu()">Om oss</a></li>
+        <li><a href="#contactus" onclick="resetMenu()">Kontakta oss</a></li>
+        <li><a href="#" onclick="resetMenu()">Kundvagn (0)</a></li>
       </ul>
     </nav>
   </header>
@@ -46,14 +57,16 @@
         <h2>Prenumerera på vårt nyhetsbrev</h2>
         <p>Prenumerera för att få en vecklig uppdatering om veckans menyer och andra nyheter!</p>
         <form action="#" autocomplete="off">
-          <input type="email" class="newsletter-email" name="newsletter-email" placeholder="Email">
+          <label for="newsletter-email" hidden>Email:</label>
+          <input type="email" id="newsletter-email" class="newsletter-email" name="newsletter-email"
+            placeholder="Email">
           <input type="submit" name="newsletter-submit" value="Prenumerera">
         </form>
       </div>
       <picture>
-        <source media="(max-width: 778px)" srcset="img/frontman-small.png">
-        <source media="(min-width: 779px)" srcset="img/frontman-normal.png">
-        <img src="img/frontman-normal.png" class="newsletter_box-imgwrap" alt="Bild på kille som håller sin telefon">
+        <source media="(max-width: 809px)" srcset="img/frontman-medel.png">
+        <source media="(min-width: 810px)" srcset="img/frontman-medium.png">
+        <img src="img/frontman-medium.png" class="newsletter_box-imgwrap" alt="En kille som håller sin telefon">
       </picture>
     </article>
     <h2 class="headliner" id="food_menu_title">Menyer</h2>
@@ -93,13 +106,13 @@
         </li>
         <li>
           <a href="404.html" class="food-category">
-            <img src="img/icons/veganicon.png" class="bgforicon iconsize" alt="En veganskt ikon">
+            <img src="img/icons/veganicon.png" class="bgforicon iconsize" alt="Vegansk ikon">
             <p>Veganskt</p>
           </a>
         </li>
         <li>
           <a href="404.html" class="food-category">
-            <img src="img/icons/drinksicon.png" class="bgforicon iconsize" alt="En Dryck ikon">
+            <img src="img/icons/drinksicon.png" class="bgforicon iconsize" alt="Dryck ikon">
             <p>Dryck</p>
           </a>
         </li>
@@ -108,166 +121,179 @@
     <!-- Slut på mat menyn -->
 
     <!-- Start på populära beställningar -->
-    <h2 class="headliner">Populära beställningar</h2>
-    <section class="popular_food">
-      <article class="popular_food_article">
-        <div class="img-wrapper">
-          <img src="img/food/pasta/pastafront.jpg" class="popular_food_img" alt="En bild på en Räkpasta">
-          <span class="price-badge">120 kr</span>
-        </div>
-        <h3>Räkpasta</h3>
-        <p>
-          En god italiensk klassiker
-        </p>
-        <button class="order-nowbtn">Beställ nu</button>
-      </article>
-      <article class="popular_food_article">
-        <div class="img-wrapper">
-          <img src="img/food/meat/asparagus.jpg" class="popular_food_img" alt="En bild på kött med sparris">
-          <span class="price-badge">120 kr</span>
-        </div>
-        <h3>Kött med sparris</h3>
-        <p>
-          En utav våra mest populära!
-        </p>
-        <button class="order-nowbtn">Beställ nu</button>
-      </article>
-      <article class="popular_food_article">
-        <div class="img-wrapper">
-          <img src="img/food/pizza/salamipizza.jpg" class="popular_food_img" alt="En bild på en salami pizza">
-          <span class="price-badge">120 kr</span>
-        </div>
-        <h3>Salami Pizza</h3>
-        <p>
-          Salami pizza med extra ost
-        </p>
-        <button class="order-nowbtn">Beställ nu</button>
-      </article>
-      <article class="popular_food_article">
-        <div class="img-wrapper">
-          <img src="img/food/fish/laxsallad.jpg" class="popular_food_img" alt="En på en laxsallad">
-          <span class="price-badge">120 kr</span>
-        </div>
-        <h3>Laxsallad</h3>
-        <p>
-          En utav våra mest populära
-        </p>
-        <button class="order-nowbtn">Beställ nu</button>
-      </article>
-      <article class="popular_food_article">
-        <div class="img-wrapper">
-          <img src="img/food/hamburger/cheeseburger.jpg" class="popular_food_img" alt="En bild på en cheeseburgare">
-          <span class="price-badge">120 kr</span>
-        </div>
-        <h3>Cheese burger</h3>
-        <p>
-          Välstekt kött med god sallad!
-        </p>
-        <button class="order-nowbtn">Beställ nu</button>
-      </article>
-      <article class="popular_food_article">
-        <div class="img-wrapper">
-          <img src="img/food/vegan/falafel-sandwich.jpg" class="popular_food_img" alt="En bild på en falafel sandwich">
-          <span class="price-badge">120 kr</span>
-        </div>
-        <h3>Falafel Sandwich</h3>
-        <p>
-          En utav våra mest populära
-        </p>
-        <button class="order-nowbtn">Beställ nu</button>
-      </article>
+    <section>
+      <h2 class="headliner">Populära beställningar</h2>
+      <div class="popular_food">
+        <article class="popular_food_article">
+          <div class="img-wrapper">
+            <img src="img/food/pasta/pastafront.jpg" class="popular_food_img" alt="En bild på en Räkpasta">
+            <span class="price-badge">120 kr</span>
+          </div>
+          <h3>Räkpasta</h3>
+          <p>
+            En god italiensk klassiker
+          </p>
+          <button class="order-nowbtn">Beställ nu</button>
+        </article>
+        <article class="popular_food_article">
+          <div class="img-wrapper">
+            <img src="img/food/meat/asparagus.jpg" class="popular_food_img" alt="Kött med sparris">
+            <span class="price-badge">120 kr</span>
+          </div>
+          <h3>Kött med sparris</h3>
+          <p>
+            En utav våra mest populära!
+          </p>
+          <button class="order-nowbtn">Beställ nu</button>
+        </article>
+        <article class="popular_food_article">
+          <div class="img-wrapper">
+            <img src="img/food/pizza/salamipizza.jpg" class="popular_food_img" alt="En salami pizza">
+            <span class="price-badge">120 kr</span>
+          </div>
+          <h3>Salami Pizza</h3>
+          <p>
+            Salami pizza med extra ost
+          </p>
+          <button class="order-nowbtn">Beställ nu</button>
+        </article>
+        <article class="popular_food_article">
+          <div class="img-wrapper">
+            <img src="img/food/fish/laxsallad.jpg" class="popular_food_img" alt="En laxsallad">
+            <span class="price-badge">120 kr</span>
+          </div>
+          <h3>Laxsallad</h3>
+          <p>
+            En utav våra mest populära
+          </p>
+          <button class="order-nowbtn">Beställ nu</button>
+        </article>
+        <article class="popular_food_article">
+          <div class="img-wrapper">
+            <img src="img/food/hamburger/cheeseburger.png" class="popular_food_img" alt="En cheeseburgare">
+            <span class="price-badge">120 kr</span>
+          </div>
+          <h3>Cheese burger</h3>
+          <p>
+            Välstekt kött med god sallad!
+          </p>
+          <button class="order-nowbtn">Beställ nu</button>
+        </article>
+        <article class="popular_food_article">
+          <div class="img-wrapper">
+            <img src="img/food/vegan/falafel-sandwich.jpg" class="popular_food_img"
+              alt="En bild på en falafel sandwich">
+            <span class="price-badge">120 kr</span>
+          </div>
+          <h3>Falafel Sandwich</h3>
+          <p>
+            En utav våra mest populära
+          </p>
+          <button class="order-nowbtn">Beställ nu</button>
+        </article>
+      </div>
     </section>
     <!-- Slut på populära beställningar -->
 
     <!-- Start på omdömen -->
-    <h2 class="headliner">Omdömen</h2>
-    <section class="reviews_box">
-      <article class="review_by">
-        <div class="review_by_img">
-          <img src="img/reviewperson.jpg" class="popular_food_img" alt="En bild på en Person som gett ett omdöme">
-        </div>
-        <p>
-          <i>"Utmärkt mat, bra pris och trevlig personal!"</i>
-        </p>
-      </article>
-      <article class="review_by">
-        <div class="review_by_img">
-          <img src="img/review2.jpg" class="popular_food_img" alt="En bild på en Person som gett ett omdöme">
-        </div>
-        <p>
-          <i>"Utmärkt mat, bra pris och trevlig personal!"</i>
-        </p>
-      </article>
-      <article class="review_by">
-        <div class="review_by_img">
-          <img src="img/review3.jpg" class="popular_food_img" alt="En bild på en Person som gett ett omdöme">
-        </div>
-        <p>
-          <i>"Utmärkt mat, bra pris och trevlig personal!"</i>
-        </p>
-      </article>
-      <article class="review_by">
-        <div class="review_by_img">
-          <img src="img/review4.jpg" class="popular_food_img" alt="En bild på en Person som gett ett omdöme">
-        </div>
-        <p>
-          <i>"Utmärkt mat, bra pris och trevlig personal!"</i>
-        </p>
-      </article>
+    <section>
+      <h2 class="headliner">Omdömen</h2>
+      <div class="reviews_box">
+        <article class="review_by">
+          <div class="review_by_img">
+            <img src="img/reviewperson.jpg" class="popular_food_img" alt="En bild på en Person som gett ett omdöme">
+          </div>
+          <p>
+            <i>"Utmärkt mat, bra pris och trevlig personal!"</i>
+          </p>
+        </article>
+        <article class="review_by">
+          <div class="review_by_img">
+            <img src="img/review2.jpg" class="popular_food_img" alt="En bild på en Person som gett ett omdöme">
+          </div>
+          <p>
+            <i>"Utmärkt mat, bra pris och trevlig personal!"</i>
+          </p>
+        </article>
+        <article class="review_by">
+          <div class="review_by_img">
+            <img src="img/review3.jpg" class="popular_food_img" alt="En bild på en Person som gett ett omdöme">
+          </div>
+          <p>
+            <i>"Utmärkt mat, bra pris och trevlig personal!"</i>
+          </p>
+        </article>
+        <article class="review_by">
+          <div class="review_by_img">
+            <img src="img/review4.jpg" class="popular_food_img" alt="En bild på en Person som gett ett omdöme">
+          </div>
+          <p>
+            <i>"Utmärkt mat, bra pris och trevlig personal!"</i>
+          </p>
+        </article>
+      </div>
     </section>
     <!-- Slut på omdömen  -->
 
     <!-- Start på om oss  -->
     <article id="aboutus">
-      <section class="aboutus_text">
-        <h2 class="headliner">Om oss</h2>
-        <p>Sedan 2016 har Delissimo stolt serverat ett rikt utbud av kulinariska upplevelser i hjärtat av staden. Hos
-          oss hittar du allt från saftiga hamburgare och krispiga pizzor till vällagade kötträtter och härliga veganska
-          alternativ.
-        </p>
-        <p>
-          Oavsett smakriktning har vi något som garanterat kommer att fresta dina smaklökar. Besök oss och
-          upplev en matresa där tradition möter nytänkande i en perfekt harmoni.
-        </p>
-        <b>Varmt välkommen till Delissimo - där
-          varje måltid är en fest!</b>
-      </section>
+      <h2 class="headliner">Om oss</h2>
+      <div id="aboutus_box">
+        <section class="aboutus_text">
+          <p>Sedan 2016 har Delissimo stolt serverat ett rikt utbud av kulinariska upplevelser i hjärtat av staden. Hos
+            oss hittar du allt från saftiga hamburgare och krispiga pizzor till vällagade kötträtter och härliga
+            veganska
+            alternativ.
+          </p>
+          <p>
+            Oavsett smakriktning har vi något som garanterat kommer att fresta dina smaklökar. Besök oss och
+            upplev en matresa där tradition möter nytänkande i en perfekt harmoni.
+          </p>
+          <b>Varmt välkommen till Delissimo - där
+            varje måltid är en fest!</b>
+        </section>
+      </div>
     </article>
     <!-- Slut på om oss -->
 
     <!-- Start på kontakta oss  -->
     <article id="contactus">
-      <section class="contactus_text">
-        <h2 class="headliner">Kontakta oss</h2>
-        <p>Om du har några frågor, feedback eller behöver ytterligare information, tveka inte att kontakta oss. Du kan
-          nå oss via telefon på <strong>[123456789]</strong> eller formuläret nedanför.
-        </p>
-        <form action="#" method="POST" autocomplete="off">
-          <label for="contact_name">Namn:</label>
-          <input type="text" id="contact_name" name="contact_name" placeholder="Namn*" required>
-          <label for="contact_email">Email:</label>
-          <input type="email" id="contact_email" name="contact_email" placeholder="Email*" required>
-          <label for="contact_phone">Telefonnummer:</label>
-          <input type="tel" id="contact_phone" name="contact_phone" placeholder="Telefonnummer*" required>
-          <label for="contact_message">Meddelande:</label>
-          <textarea id="contact_message" name="contact_message" rows="12" placeholder="Meddelande*" required></textarea>
-          <input type="submit" name="contact_btn" value="Skicka">
-        </form>
-      </section>
+      <h2 class="headliner">Kontakta oss</h2>
+      <div id="contactus_box">
+        <section class="contactus_text">
+          <p>Om du har några frågor, feedback eller behöver ytterligare information, tveka inte att kontakta oss. Du kan
+            nå oss via telefon på <strong>[123456789]</strong> eller formuläret nedanför.
+          </p>
+          <form action="#" method="POST" autocomplete="off">
+            <label for="contact_name">Namn:</label>
+            <input type="text" id="contact_name" name="contact_name" placeholder="Namn*" required>
+            <label for="contact_email">Email:</label>
+            <input type="email" id="contact_email" name="contact_email" placeholder="Email*" required>
+            <label for="contact_phone">Telefonnummer:</label>
+            <input type="tel" id="contact_phone" name="contact_phone" placeholder="Telefonnummer*" required>
+            <label for="contact_message">Meddelande:</label>
+            <textarea id="contact_message" name="contact_message" rows="12" placeholder="Meddelande*"
+              required></textarea>
+            <input type="submit" name="contact_btn" value="Skicka">
+          </form>
+        </section>
+      </div>
     </article>
     <!-- Slut på kontakta oss  -->
 
     <!-- Start på om plats  -->
-    <article id="location">
-      <section class="location_text">
-        <h2 class="headliner">Vart hittar du oss?</h2>
-        <p>Hitta oss på Portgången!
-          Besök vår plats belägen på <b>Portgången 3, 433 38 Partille</b>. Vi ser fram emot att välkomna dig!
-        <p>
+    <article>
+      <h2 class="headliner">Vart hittar du oss?</h2>
+      <div id="location">
+        <section class="location_text">
+          <p>Hitta oss på Portgången!
+            Besök vår plats belägen på <b>Portgången 3, 433 38 Partille</b>. Vi ser fram emot att välkomna dig!
+          </p>
           <iframe title="Google Maps plats för Delissimo i Partille"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8518.360585132888!2d12.1218837!3d57.7404028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff70ce5e59e6d%3A0xc7fa510a36eff5!2sDelissimo%20-%20italian%20deli%20%26%20espresso%20bar!5e0!3m2!1sen!2sse!4v1693992146896!5m2!1sen!2sse"
             class="mapiframe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </section>
+        </section>
+      </div>
     </article>
     <!-- Slut på plats -->
   </main>
